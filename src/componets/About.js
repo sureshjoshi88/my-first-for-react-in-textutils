@@ -1,31 +1,17 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
-export default function About() {
-    const [mystyle, setmystyle] = useState({
-        color: "black",
-        backgroundColor: "white"
-    })
-    const [btntext, setbtnText] = useState("Enable dark mode")
-
-    const toggleStyle = () => {
-        if (mystyle.color === "black") {
-            setmystyle({
-                color: "white",
-                backgroundColor: "black",
-                border: "1px solid white"
-            })
-            setbtnText("Enable Light Mode")
-        } else {
-            setmystyle({
-                color: "black",
-                backgroundColor: "white",
-            })
-            setbtnText("Enable Dark Mode")
-        }
-    }
+export default function About(props) {
+    // const [mystyle, setmystyle] = useState({
+    //     color: "black",
+    //     backgroundColor: "white"
+    // })
+   let mystyle ={
+    color : props.mode==="dark"?"white":"#042743",
+    backgroundColor: props.mode==="dark"?"rgb(37 74 104)":"white"
+   }
     return (
-        <div className='container my-3' style={mystyle}>
-            <h1>Abouts Us</h1>
+        <div className='container my-3'>
+            <h1 style={{ color: props.mode==="dark"?"white":"#042743"}}>Abouts Us</h1>
             <div className="accordion accordion-flush" id="accordionFlushExample">
                 <div className="accordion-item" style={mystyle}>
                     <h2 className="accordion-header" id="flush-headingOne">
