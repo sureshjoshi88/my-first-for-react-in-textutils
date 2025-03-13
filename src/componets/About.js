@@ -56,11 +56,11 @@ limit.</div>
                         </button>
                     </h2>
                     <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        <div className="accordion-body">This word counter software works in any web browsers such as Chrome, Firefox, Internet Explorer, Safari, Opera. It
+                        suits to count characters in facebook, blog, books, excel document, pdf document, essays, etc.</div>
                     </div>
                 </div>
             </div>
-        <button type='button' onClick={toggleStyle} className="btn btn-primary">{btntext}</button>
         </div>
     )
 }
