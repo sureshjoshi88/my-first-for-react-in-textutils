@@ -30,8 +30,6 @@ function App() {
       setmode("light")
       document.body.style.backgroundColor="white"
       showAlert("light mode has been  enabled","success")
-    
-
     }
   }
   return (
