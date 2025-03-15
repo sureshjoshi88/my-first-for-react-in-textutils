@@ -19,6 +19,12 @@ export default function Navbar(props) {
               <Link className="nav-link" to="/about">{props.aboutText}</Link>
             </li>
           </ul>
+            <div className="d-flex gap-2 me-2">
+                <button className="btn btn-primary" onClick={()=>{props.toggleMode("primary")}} style={{height:"30px",width:"30px"}}></button>
+                <button className="btn btn-danger" onClick={()=>{props.toggleMode("danger")}} style={{height:"30px",width:"30px"}}></button>
+                <button className="btn btn-success" onClick={()=>{props.toggleMode("success")}} style={{height:"30px",width:"30px"}}></button>
+                <button className="btn btn-warning" onClick={()=>{props.toggleMode("warning")}} style={{height:"30px",width:"30px"}}></button>
+            </div>
           <div>
             <div className={`form-check form-switch me-5 text-${props.mode==="light"?"dark":"light"}`}>
               <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault" />
