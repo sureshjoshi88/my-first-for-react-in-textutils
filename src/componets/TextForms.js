@@ -58,7 +58,7 @@
      </div>
      <div className="container"  style={{color: props.mode==="dark"?"white":"#042743"}}>
     <h3>Your Text Summary</h3>
-    <p className='fs-4 fw-semibold'> {text.split(" ").filter((element)=>{return element.length!==0}).length} word and {text.length} charaters</p>
+    <p className='fs-4 fw-semibold'> {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} word and {text.length} charaters</p>
     <p className='fs-4 fw-semibold'> {0.008*text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes read</p>
     <h4>Prievew</h4>
     <p className='fs-4 fw-normal'>{text.length?text:"Nothing to preview!"}</p>

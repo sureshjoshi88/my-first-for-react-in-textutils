@@ -31,12 +31,13 @@ function App() {
     // console.log(cls);
     removeBodyColor();
     document.body.classList.add("bg-"+(cls))  
-    let butonmode = document.getElementsByClassName("clsnew")
     // console.log(butonmode);
-    
-    if(document.body.backgroundColor==="primary"){
-      butonmode.classList.remove("btn-primary")
-      butonmode.classList.add("btn-danger")
+    if (cls === "primary") { 
+      let butonmode = document.getElementsByClassName("clsnew");
+      for (let i = 0; i < butonmode.length; i++) {
+        butonmode[i].classList.remove("btn-primary");
+        butonmode[i].classList.add("btn-danger");
+      }
     }
 
     if(mode==="light"){
