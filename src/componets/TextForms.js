@@ -48,7 +48,7 @@
        <div className="mb-3">
     <textarea className="form-control" value={text}  onChange={handleOnChange} style={{backgroundColor: props.mode==="dark"?"#13466e":"white",color: props.mode==="dark"?"white":"#042743"}} id="mybox" rows="8" placeholder='enter your text'></textarea>
     </div>
-      <div className='d-flex gap-3 flex-wrap'>
+      <div className='d-flex gap-3 flex-wrap' id='main-buton'>
       <button className="btn btn-primary clsnew" disabled={text.length===0} onClick={handleUPClick}>Convert to Uppercase</button>
       <button className="btn btn-primary clsnew" disabled={text.length===0} onClick={handleLoClick}>Convert to Lovercase</button>
       <button className="btn btn-primary clsnew" disabled={text.length===0} onClick={handleClearClick}>Clear text</button>
