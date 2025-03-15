@@ -30,7 +30,15 @@ function App() {
   const toggleMode=(cls)=>{
     // console.log(cls);
     removeBodyColor();
-    document.body.classList.add("bg-"+(cls))
+    document.body.classList.add("bg-"+(cls))  
+    let butonmode = document.getElementsByClassName("clsnew")
+    // console.log(butonmode);
+    
+    if(document.body.backgroundColor==="primary"){
+      butonmode.classList.remove("btn-primary")
+      butonmode.classList.add("btn-danger")
+    }
+
     if(mode==="light"){
       setmode("dark")
       document.body.style.backgroundColor="#042743"
