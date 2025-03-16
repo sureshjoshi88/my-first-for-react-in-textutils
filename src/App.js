@@ -28,7 +28,6 @@ function App() {
     document.body.classList.remove("bg-info")
   }
   const toggleMode=(cls)=>{
-    // console.log(cls);
     removeBodyColor();
     document.body.classList.add("bg-"+(cls))  
     // console.log(butonmode);
@@ -38,13 +37,13 @@ function App() {
       //   butonmode[i].classList.remove("btn-primary");
       //   butonmode[i].classList.add("btn-danger");
       // }
-      let main = document.getElementById("main-buton")
-      console.log(  main.children);
-      for(let i = 0;i<main.children.length;i++){
+      // let main = document.getElementById("main-buton")
+      // console.log(  main.children);
+      // for(let i = 0;i<main.children.length;i++){
         
-        main.children[i].classList.remove("btn-primary")
-        main.children[i].classList.add("btn-danger")
-      }
+      //   main.children[i].classList.remove("btn-primary")
+      //   main.children[i].classList.add("btn-danger")
+      // }
     }
 
     if(mode==="light"){
