@@ -20,7 +20,7 @@ export default function Navbar(props) {
             </li>
           </ul>
             <div className="d-flex gap-2 me-2">
-                <button className="btn btn-primary" onClick={()=>{props.toggleMode("primary")}} style={{height:"30px",width:"30px"}}></button>
+                <button className="btn btn-info" onClick={()=>{props.toggleMode("info")}} style={{height:"30px",width:"30px"}}></button>
                 <button className="btn btn-danger" onClick={()=>{props.toggleMode("danger")}} style={{height:"30px",width:"30px"}}></button>
                 <button className="btn btn-success" onClick={()=>{props.toggleMode("success")}} style={{height:"30px",width:"30px"}}></button>
                 <button className="btn btn-warning" onClick={()=>{props.toggleMode("warning")}} style={{height:"30px",width:"30px"}}></button>
