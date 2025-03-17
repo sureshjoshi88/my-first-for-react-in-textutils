@@ -21,12 +21,12 @@ function App() {
       setAlert(null)
     }, 3000);
   }
-  let removeBodyColor=()=>{
-    document.body.classList.remove("bg-danger")
-    document.body.classList.remove("bg-success")
-    document.body.classList.remove("bg-warning")
-    document.body.classList.remove("bg-info")
-  }
+  // let removeBodyColor=()=>{
+  //   document.body.classList.remove("bg-danger")
+  //   document.body.classList.remove("bg-success")
+  //   document.body.classList.remove("bg-warning")
+  //   document.body.classList.remove("bg-info")
+  // }
   const toggleMode=(cls)=>{
     // console.log(cls);
     // removeBodyColor();
